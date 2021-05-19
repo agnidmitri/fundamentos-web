@@ -1,0 +1,92 @@
+/*css com uso de seletor id - abra um id="" dentro da tag do elemento, ex: <p id="p1"> 
+use #p1 dentro da tag de css e indique a estrutura desejada. OBS - o id é válido para UM único elemento
+css com uso de class - abra um class="" dentro da tag do elemento, ex: <h1 class="container"> 
+use .container dentro de css e indique a estrutura desejada. OBS - uma class pode ser utilizada em vários elementos*/
+
+/*estilos da página index.html*/
+
+.center 
+{
+    text-align: center;
+}
+.right
+{
+     justify-content: right;
+}
+
+.justify 
+{
+    text-align: justify;
+}
+
+.container
+{
+    display: flex; /*torna o elemento e automaticamente todos seus filhos em flex (torna o html em semântica)*/
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.par
+{
+    color: #1e272e;
+    font-family: sans-serif;
+    font: 25;
+    justify-content: center;
+    text-justify: auto;
+}
+
+.title
+{
+    color: #1e272e;
+    font-family: sans-serif;
+    font: 45;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#menu li 
+{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#menu li a
+{
+    margin: auto;
+    flex-flow: row;
+    text-decoration: none;
+    color: #f78fb3;
+    font: bolder;
+    font-size: 45;
+    font-family: sans-serif;
+}
+
+#menu li a:hover
+{
+    color: #596275;
+}
+
+.padd-35
+{
+    padding: 35px;
+}
+.br-60
+{
+    border-radius: 60%;
+}
+.wh-300
+{
+    width: 300px;
+    height: 300px;
+}
+
+.wh-sm
+{
+    width: 50px;
+    height: 50px;
+}
+
+/*estilos da página contato.html*/

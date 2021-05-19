@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Contato</title>
 </head>
     <body>
-        <ul>
+        <ul id="menu">
             <li>
                 <a href="index.html">Sobre mim</a> 
             </li>
@@ -15,33 +16,65 @@
                 <a href="contato.html">Contato</a>
             </li>
         </ul>
-        <h1>Entre em contato</h1>
+
+        <h1 class="title">Entre em contato</h1>
  
-        <form>
+        <div class="container par">
+            <form>
  
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-            <br>
-            <br>
-            <!--br é a quebra de linha e pode ser usado por razões estéticas mas não faz parte das boas práticas de HTML-->
-            <label for="email">E-mail:</label>
-            <input type="text" id="email">
-            <br>
-            <br>
-            <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea> <!--abre uma área de texto dentro do formulario-->
-            <br>
-            <br>
-            <button>Enviar</button>
-            
-            <h2>Onde você pode me encontrar</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117042.44530295112!2d-46.714669941796906!3d-23.54773280000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59adb70272a9%3A0xc730c73f8d9aebe0!2sTOYA%20-%20Culin%C3%A1ria%20Vegan!5e0!3m2!1spt-BR!2sbr!4v1621353685983!5m2!1spt-BR!2sbr" 
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <!--br é a quebra de linha e pode ser usado por razões estéticas mas não faz parte das boas práticas de HTML-->
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="text" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label>
+                <br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea> <!--abre uma área de texto dentro do formulario-->
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>    
+        </div>
+
+        <h2 class="title container">Onde você pode me encontrar</h2>
+        <div class="container padd-35"> 
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117042.44530295112!2d-46.714669941796906!3d-23.54773280000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59adb70272a9%3A0xc730c73f8d9aebe0!2sTOYA%20-%20Culin%C3%A1ria%20Vegan!5e0!3m2!1spt-BR!2sbr!4v1621353685983!5m2!1spt-BR!2sbr" 
             width="550" 
             height="315" 
             style="border:0;" 
             allowfullscreen="" 
-            loading="lazy"></iframe>
-        </form>
+            loading="lazy">
+            </iframe>
+        </div>
+        
+        <footer>
+
+            <div class="container padd-35">
+                <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank">
+                    <img class="wh-sm padd-35" src="assets/img/logoin.png" alt="logo linkedin">
+                </a>
+
+                <a href="https://www.github.com/agnidmitri" target="_blank">
+                    <img class="wh-sm padd-35" src="assets/img/logogit.png" alt="logo github">
+                </a>
+            </div>
+
+            <div class="par center"> 
+                <p> 
+                    Todos os direitos reservados: Agni Dmitri &copy
+                </p>
+            </div>
+           
+        </footer>
+           
+        
     </body>
 </html>
 

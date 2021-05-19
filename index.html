@@ -5,53 +5,86 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ajusta o tamanho do conteúdo para o dispositivo usado, responsividade-->
         <title>Sobre mim</title>
-    </head>
-    <body>  <!-- corpo do projeto inicia aqui -->
 
-        <ul>
+        <!-- aplicação de css referenciando outro file - abra uma folde de css e um file style.css 
+        dentro da tag de head abra uma tag <link> e referencie o file style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>  <!-- corpo do projeto inicia aqui -->
+    
+        <ul id="menu">
             <li>
                 <a href="index.html">Sobre mim</a>
             </li>
             <li>
-                <a href="contato.html">Contato</a><!-- botão clicável que leva a outro caminho, pode ser aberto em uma nova pagina utilizando target="blank"-->
+                <a href="contato.html">Contato</a>
+                <!-- botão clicável que leva a outro caminho, pode ser aberto em uma nova pagina utilizando target="blank"-->
             </li>
         </ul>
 
-        <h1>Sobre mim</h1>
+        <h1 class="title"> Sobre mim</h1>
+        <div class="container"> <!-- a tag div serve como um container para facilitar a estilização de blocos-->
+            
+            <div> <!-- divisão para imagem-->
+                <!-- src é a fonte da image, alt é a descrição da imagem-->
+                <img class=" br-60 p-35 wh-300 right" src="assets/img/me.jpg" 
+                alt="Foto de Agni, desenvolvedore jr. e criadore desse conteúdo.
+                Descrição da imagem: À frente de uma parede amarela, está uma pessoa preta de pele clara, com um braço levantado 
+                e a mão direita atrás da cabeça. 
+                Seus cabelos têm raiz pink e pontas rosa pastel. Elu usa uma camiseta preta larga de mangas curtas que formas várias dobras.
+                Está usando alargadores pretos, piercing no nariz ao lado esquerdo, no septo, na ponte do nariz entre os olhos, e no meio do lábio inferior.
+                Usa delineador nos olhos e batom preto nas bordas e vermelho escuro no centro. 
+                Tem uma tatuagem de um centímetro do símbolo alquímico do ar na bochecha esquerda.
+                Usa um colar próximo ao pescoço com um pingente de pentagrama. E outro na altura do coração com um pingente de chave."> 
+            </div>
 
-        <p> <!-- inicia parágrafo -->
-            <h1>
-                Olá! Eu sou Agni. Sou uma pessoa trans não binária, tenho vinte e um anos e residente de Mauá, São Paulo.
-                Meu objetivo profissional é trabalhar como front-end e aprimorar minhas habilidades com UI/UX
-                para tornar a tecnologia cada vez mais acessível a todos os públicos. 
-                Meu desejo pessoal é ser representatividade para pessoas trans e não brancas dentro da área de tecnologia.   
-            </h1>
-        </p>
-        <img src="assets/img/me.jpg" 
-        alt="Foto de Agni, desenvolvedore jr. e criadore desse conteúdo.
-        Descrição da imagem: À frente de uma parede amarela, está uma pessoa preta de pele clara, com um braço levantado 
-        e a mão direita atrás da cabeça. 
-        Seus cabelos têm raiz pink e pontas rosa pastel. Elu usa uma camiseta preta larga de mangas curtas que formas várias dobras.
-        Está usando alargadores pretos, piercing no nariz ao lado esquerdo, no septo, na ponte do nariz entre os olhos, e no meio do lábio inferior.
-        Usa delineador nos olhos e batom preto nas bordas e vermelho escuro no centro. 
-        Tem uma tatuagem de um centímetro do símbolo alquímico do ar na bochecha esquerda.
-        Usa um colar próximo ao pescoço com um pingente de pentagrama. E outro na altura do coração com um pingente de chave.     
-        "
+            <div> <!-- divisão para texto-->
+                <p class="par"> <!-- inicia parágrafo -->
+                    Olá! Eu sou Agni. Sou uma pessoa trans não binária, tenho vinte e um anos e residente de Mauá, São Paulo.
+                    <br>
+                    Meu objetivo profissional é trabalhar como front-end e aprimorar minhas habilidades com UI/UX
+                    para tornar a tecnologia cada vez mais acessível a todos os públicos. 
+                    <br>
+                    Meu desejo pessoal é ser representatividade para pessoas trans e não brancas dentro da área de tecnologia.   
+                </p>
+    
+            </div>
+        </div>
 
-        height="550"
-        width="400"
-        > <!-- src é a fonte da image, alt é a descrição da imagem-->
+        <h2 class="title">Uma música que recomendo</h2>
 
-        <h2>Uma música que gosto muito</h2>
+        <div class="container padd-35">
+            <iframe 
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/iZoBnC0focE"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        <hr>
+        <footer>
 
-        <iframe 
-        width="560" 
-        height="315"
-        src="https://www.youtube.com/embed/iZoBnC0focE"
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
+            <div class="container padd-35">
+                <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank">
+                    <img class="wh-sm padd-35" src="assets/img/logoin.png" alt="logo linkedin">
+                </a>
+
+                <a href="https://www.github.com/agnidmitri" target="_blank">
+                    <img class="wh-sm padd-35" src="assets/img/logogit.png" alt="logo github">
+                </a>
+            </div>
+
+            <div class="par center"> 
+                <p> 
+                    Todos os direitos reservados: Agni Dmitri &copy
+                </p>
+            </div>
+           
+        </footer>
+   
     </body>
 </html>
