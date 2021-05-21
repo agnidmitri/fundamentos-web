@@ -63,6 +63,7 @@ function validaNome() {
         txtNome.innerHTML = "Nome inválido"
     } else {
         txtNome.innerHTML = ''
+        nomeOk = true
     }
 }
 
@@ -73,6 +74,7 @@ function validaEmail() {
         txtEmail.innerHTML = 'E-mail inválido'
     } else {
         txtEmail.innerHTML = ''
+        emailOk = true
     }
 }
 
@@ -80,10 +82,11 @@ function validaAss() {
     let txtAss = document.querySelector('#txtAss')
 
     if (assunto.value.length <= 100) {
-        txtAss.innerHTML = "Mínimo de 100 carácteres"
+        txtAss.innerHTML = "Mínimo de 100 caractéres."
         txtAssunto.style.display = 'block'
     } else {
         txtAss.innerHTML = ''
+        assuntoOk = true
     }
 }
 
