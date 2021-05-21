@@ -13,22 +13,19 @@
 
     <body>  <!-- corpo do projeto inicia aqui -->
     
-        <ul id="menu">
-            <li>
-                <a href="index.html">Sobre mim</a>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-                <!-- botão clicável que leva a outro caminho, pode ser aberto em uma nova pagina utilizando target="blank"-->
-            </li>
+    <nav>  
+        <ul id="menu"> <!--lista não organizada-->
+            <li><a href="index.html">Sobre mim</a></li> <!-- botão clicável que leva a outro caminho, pode ser aberto em uma nova pagina utilizando target="blank"-->
+            <li><a href="contato.html">Contato</a></li>
         </ul>
-
-        <h1 class="title"> Sobre mim</h1>
+    </nav>
+       
+       
         <div class="container"> <!-- a tag div serve como um container para facilitar a estilização de blocos-->
             
             <div> <!-- divisão para imagem-->
                 <!-- src é a fonte da image, alt é a descrição da imagem-->
-                <img class=" br-60 p-35 wh-300 right" src="assets/img/me.jpg" 
+                <img id="profile" class="container br-60 wh-300 right" onmousemove="zoomPic()" onmouseout="outPic()" src="assets/img/me1.jpg" 
                 alt="Foto de Agni, desenvolvedore jr. e criadore desse conteúdo.
                 Descrição da imagem: À frente de uma parede amarela, está uma pessoa preta de pele clara, com um braço levantado 
                 e a mão direita atrás da cabeça. 
@@ -38,27 +35,39 @@
                 Tem uma tatuagem de um centímetro do símbolo alquímico do ar na bochecha esquerda.
                 Usa um colar próximo ao pescoço com um pingente de pentagrama. E outro na altura do coração com um pingente de chave."> 
             </div>
+            
 
             <div> <!-- divisão para texto-->
-                <p class="par"> <!-- inicia parágrafo -->
-                    Olá! Eu sou Agni. Sou uma pessoa trans não binária, tenho vinte e um anos e residente de Mauá, São Paulo.
+                
+                <h1 class="title t-left"> Sobre mim</h1>
+                <p class="par padd-35"> <!-- inicia parágrafo -->
+                    Olá! Eu sou Agni Dmitri. Tenho vinte e um anos, nasci e vivo na região metropolitana de São Paulo.
                     <br>
+                    <br>
+                    Sou uma pessoa trans não binária, sou praticante de yoga, vegane, responsável por três gatos, e tipo ENFP no MTBI.
+                    <br>
+                    <br>
+                    Tenho formação como barista e bartender, atuo como designer freelancer com foco em mídias sociais.  
+                    Atualmente estou cursando o bootcamp da Generation, de desenvolvimento full stack em linguagem Java. 
                     Meu objetivo profissional é trabalhar como front-end e aprimorar minhas habilidades com UI/UX
                     para tornar a tecnologia cada vez mais acessível a todos os públicos. 
                     <br>
-                    Meu desejo pessoal é ser representatividade para pessoas trans e não brancas dentro da área de tecnologia.   
+                    Este site é meu primeiro portfólio online. 
+                    <br>
+                    <br>
+                    Minha missão na tecnologia é ser representatividade para pessoas trans e não brancas.
                 </p>
+
     
             </div>
         </div>
 
-        <h2 class="title">Uma música que recomendo</h2>
+        <h2 class="title container">Uma música que me representa</h2>
 
         <div class="container padd-35">
-            <iframe 
-            width="560" 
+            <iframe width="560" 
             height="315"
-            src="https://www.youtube.com/embed/iZoBnC0focE"
+            src="https://www.youtube.com/embed/wRUzUsTdW0o"
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -70,21 +79,22 @@
 
             <div class="container padd-35">
                 <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank">
-                    <img class="wh-sm padd-35" src="assets/img/logoin.png" alt="logo linkedin">
+                    <img id="sm1" class="wh-sm padd-35" src="assets/img/logoin.png" onmousemove="zoomSm1()" onmouseout="outSm1()" alt="logo linkedin">
                 </a>
 
                 <a href="https://www.github.com/agnidmitri" target="_blank">
-                    <img class="wh-sm padd-35" src="assets/img/logogit.png" alt="logo github">
+                    <img id="sm2" class="wh-sm padd-35" src="assets/img/logogit.png" onmousemove="zoomSm2()" onmouseout="outSm2()" alt="logo github">
                 </a>
             </div>
 
-            <div class="par center"> 
+            <div class="container footer"> 
                 <p> 
-                    Todos os direitos reservados: Agni Dmitri &copy
+                    Todos os direitos reservados: Agni Dmitri &copy 2021
                 </p>
             </div>
            
         </footer>
    
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

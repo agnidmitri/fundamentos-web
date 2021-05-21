@@ -5,22 +5,21 @@ use .container dentro de css e indique a estrutura desejada. OBS - uma class pod
 
 /*estilos da página index.html*/
 
-.center 
-{
+
+
+
+.center {
     text-align: center;
 }
-.right
-{
+.right{
      justify-content: right;
 }
 
-.justify 
-{
+.justify {
     text-align: justify;
 }
 
-.container
-{
+.container{
     display: flex; /*torna o elemento e automaticamente todos seus filhos em flex (torna o html em semântica)*/
     flex-flow: row-reverse;
     justify-content: center;
@@ -28,65 +27,101 @@ use .container dentro de css e indique a estrutura desejada. OBS - uma class pod
 
 }
 
-.par
-{
+.form {
+    font-family: monospace;
+    font-size: 18px;
+}
+.par{
     color: #1e272e;
-    font-family: sans-serif;
-    font: 25;
-    justify-content: center;
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 220px;
+}
+
+.footer{
+    color: #1e272e;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: justify;
     text-justify: auto;
 }
 
-.title
-{
+.title{
+   
     color: #1e272e;
-    font-family: sans-serif;
-    font: 45;
+    font-family: monospace;
+    font-size: 30px;
     font-weight: bolder;
+   
+ 
+}
+
+.t-left{
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+#menu 
+{   
+    background-color: #e0dede;
     text-align: center;
+    height: 75px;
 }
 
-#menu li 
-{
-    display: flex;
-    align-items: center;
-    padding: 30px;
+#menu li{
+    display: inline-block;
+    margin-top:20px;
+
 }
 
-#menu li a
-{
-    margin: auto;
-    flex-flow: row;
+#menu li a{
+    color: #333;
     text-decoration: none;
     color: #f78fb3;
-    font: bolder;
-    font-size: 45;
-    font-family: sans-serif;
+    padding: 35px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-#menu li a:hover
-{
-    color: #596275;
+#menu li a:hover{
+    color: #ec3c7a;
+    background-color: #9b9b9b;
+    font-style: italic;
 }
 
-.padd-35
-{
+.padd-35{
     padding: 35px;
 }
-.br-60
-{
-    border-radius: 60%;
-}
-.wh-300
-{
-    width: 300px;
-    height: 300px;
+
+#profile{
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 65px;
 }
 
-.wh-sm
-{
+.br-60{
+    border-radius: 50%;
+}
+.wh-300{
+    width: 350px;
+    height: 350px;
+}
+
+.wh-sm{
     width: 50px;
     height: 50px;
 }
 
 /*estilos da página contato.html*/
+
+.wh-150{
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    background-color: #ededed;
+}
